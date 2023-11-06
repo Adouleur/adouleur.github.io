@@ -6,7 +6,9 @@ The project is created with:
 * Gulp version: 2.3.0
 * Sass version: 1.49
 ## Setup
+
+```
 To run this project, install it locally using npm:
 $ npm install
 $ npm start
-
+```
