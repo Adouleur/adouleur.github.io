@@ -1,4 +1,4 @@
-# MyPizzeria :pizza: - Pizza restaurant website
+# [MyPizzeria](https://adouleur.github.io/) :pizza: - Pizza restaurant website
 ## General information
 My first JavaScript project of a full website with the help of Figma [design](https://www.figma.com/file/nqkxCucDy5PjCoCkgMtGIe/Pizza-site?type=design&node-id=5-325&mode=design&t=N1oUmioGrOVNaTP4-0) with responsive design and animation
 ## Technologies:
