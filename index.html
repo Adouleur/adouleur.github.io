@@ -1,6 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta http-equiv="Refresh" content="2; url=public/index.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../app/css/header.css">
+    <link rel="stylesheet" href="../app/css/footer.css">
+    <link rel="stylesheet" href="../app/css/main.css">
 </head>
+
+<body>
+    <header>
+        <div class="topBar left">
+            <p class="topBartBrandName">Pizzanio</p>
+            <img src="../app/img/Logo.svg" alt="#">
+        </div>
+        <p class="hiddenBrandName">Pizzanio</p>
+        <ul class="headerNav">
+            <li> <a href="../app/index.html">Головна</a></li>
+            <li> <a href="../app/menu.html">Меню</a></li>
+            <li> <a href="../app/order.html">Замовлення</a></li>
+            <li> <a href="../app/about.html">Про нас</a></li>
+        </ul>
+        <div class="topBar right">
+            <div class="burgerIconDiv"><img class="burgerIcon" src="../app/img/menu-hamburger.svg" alt=""></div>
+            <div class="topBarButtons">
+                <img class="languageButton" src="../app/img/icon_language.svg" alt="">
+                <div class="languagePopUp hidden">
+                    <p>Українська</p>
+                    <p>English</p>
+                </div>
+                <a href="../app/menu.html"><img src="../app/img/full-pizza.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <div class="burgerMenu hidden">
+        <ul>
+            <li> <a href="../app/index.html">Головна</a></li>
+            <li> <a href="../app/menu.html">Меню</a></li>
+            <li> <a href="../app/order.html">Замовлення</a></li>
+            <li> <a href="../app/about.html">Про нас</a></li>
+        </ul>
+    </div>
+    <div class="mainContainer">
+        <article>
+            <div class="title">
+                <h1>
+                    Pizza
+                </h1>
+                <h2>
+                    Special
+                </h2>
+            </div>
+            <div class="description">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</li>
+                </ul>
+            </div>
+            <a href="../app/menu.html"> <button class="redLightButtons">МЕНЮ</button></a>
+        </article>
+        <aside>
+            <div class="pizzaSlider">
+                <div class="pizza">
+                    <div class="discount"></div>
+                    <img class="pizzaImg" src="" alt="">
+                </div>
+                <h3 class="pizzaName"></h3>
+                <h4 class="price"></h4>
+                <div class="sliderButtons">
+                    <button class="swipe prev"><img src="../app/img/swipeLeft.svg" alt=""></button>
+                    <button class="swipe next"><img src="../app/img/swipeRight.svg" alt=""></button>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footerWrapper">
+            <div class="footerLogo">
+                <img src="../app/img/Logo.svg" alt="#">
+                <p>Pizzanio</p>
+            </div>
+            <nav class="footerNav">
+                <ul>
+                    <li> <a href="../app/index.html">Головна</a></li>
+                    <li> <a href="../app/menu.html">Меню</a></li>
+                    <li> <a href="../app/order.html">Замовлення</a></li>
+                    <li> <a href="../app/about.html">Про нас</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts">
+                <li>+380 1214 11 32</li>
+                <li>+380 1214 11 32</li>
+                <li>example@gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../app/scripts/index.js"></script>
+    <script src="../app/scripts/header.js"></script>
+</body>
+
 </html>
