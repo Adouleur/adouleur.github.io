@@ -1,0 +1,96 @@
+.mainContainer {
+  max-width: 1170px;
+  width: 98%;
+  margin: 0 auto 50px auto;
+  min-height: calc(100vh - 356px);
+  padding-top: 150px;
+  padding-left: 2%;
+}
+@media (max-width: 832px) {
+  .mainContainer {
+    width: 90%;
+  }
+}
+.mainContainer h1 {
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+@media (max-width: 832px) {
+  .mainContainer h1 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.mainContainer video {
+  width: 98%;
+}
+.mainContainer section {
+  line-height: 130%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+@media (max-width: 832px) {
+  .mainContainer section a {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 832px) {
+  .mainContainer section {
+    grid-template-columns: 1fr;
+  }
+}
+.mainContainer section .redLightButtons {
+  max-width: 194px;
+  width: 100%;
+}
+@media (max-width: 832px) {
+  .mainContainer section .redLightButtons {
+    width: 164px;
+    font-size: 14px;
+  }
+}
+.mainContainer section h2 {
+  margin-bottom: 20px;
+}
+@media (max-width: 832px) {
+  .mainContainer section h2 {
+    font-size: 14px;
+  }
+}
+.mainContainer section .stylizedText {
+  font-style: italic;
+  opacity: 0.6;
+}
+.mainContainer .leftSection {
+  max-width: 570px;
+  width: 100%;
+}
+@media (max-width: 832px) {
+  .mainContainer .leftSection {
+    font-size: 14px;
+  }
+}
+.mainContainer .leftSection p {
+  margin-bottom: 30px;
+}
+@media (max-width: 832px) {
+  .mainContainer .leftSection p {
+    font-size: 14px;
+  }
+}
+.mainContainer .rightsection {
+  max-width: 370px;
+  width: 100%;
+}
+@media (max-width: 832px) {
+  .mainContainer .rightsection {
+    font-size: 14px;
+  }
+}
+.mainContainer .rightsection li {
+  margin-bottom: 20px;
+}

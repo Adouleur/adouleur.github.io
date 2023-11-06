@@ -1,0 +1,20 @@
+$backBlue: #1d1b2b;
+$redLight: #ec4d2f;
+$redDark: #b83922;
+$headerH: 100px;
+@mixin montserrat400() {
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+@mixin montserrat600() {
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+@mixin anton() {
+    font-family: "anton";
+}
+@mixin flexcenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

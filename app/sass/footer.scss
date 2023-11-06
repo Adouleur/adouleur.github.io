@@ -1,0 +1,79 @@
+@import "variables";
+footer {
+    display: flex;
+    align-items: center;
+    min-height: 256px;
+    height: 100%;
+    background-color: $redDark;
+    width: 100%;
+    li {
+        padding-left: 10px;
+    }
+}
+
+.footerWrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+        margin-top: 34px;
+        gap: 30px;
+        margin-left: 20px;
+    }
+    background-color: $redDark;
+    width: 59%;
+    @media (min-width: 768px) {
+        margin: 0 auto;
+    }
+
+    ul {
+        padding-left: 0;
+        list-style: none;
+    }
+    .footerLogo {
+        @media (max-width: 767px) {
+            margin-left: 10px;
+        }
+        img {
+            margin-right: 10px;
+            width: 45px;
+            height: 45px;
+        }
+        display: flex;
+    }
+    p {
+        margin: 5px 0 0 0;
+        @include anton;
+        font-size: 24px;
+    }
+}
+.footerNav {
+    ul {
+        max-width: 125px;
+        width: 100%;
+
+        li {
+            transition: all 0.5s ease;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover {
+                background-color: $redLight;
+            }
+            &:active {
+                background-color: $redDark;
+            }
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.contacts {
+    li {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}

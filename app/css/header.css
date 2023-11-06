@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  background-color: #1d1b2b;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+header {
+  z-index: 5;
+  position: fixed;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: #ec4d2f;
+  height: 100px;
+  width: 100%;
+}
+header .hiddenBrandName {
+  font-family: "anton";
+  font-size: 24px;
+}
+@media (min-width: 767px) {
+  header .hiddenBrandName {
+    display: none;
+  }
+}
+header ul {
+  justify-content: space-evenly;
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+header ul li {
+  user-select: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  padding: 1px 10px 1px 10px;
+}
+header ul li:hover {
+  background: #b83922;
+}
+@media (max-width: 767px) {
+  header ul {
+    display: none;
+  }
+}
+header .topBar {
+  background-color: #b83922;
+  max-width: 535px;
+  width: 63%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+  header .topBar {
+    width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  header .topBar {
+    width: 15%;
+  }
+}
+
+.left {
+  flex-direction: row-reverse;
+  border-radius: 0 100px 100px 0;
+  padding-right: 25px;
+}
+.left .topBartBrandName {
+  font-family: "anton";
+  font-size: 24px;
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .left .topBartBrandName {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .left img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.right {
+  padding-left: 25px;
+  border-radius: 100px 0 0 100px;
+}
+.right .languageButton {
+  cursor: pointer;
+  margin-right: 60px;
+  position: relative;
+}
+
+@media (min-width: 767px) {
+  .topBarButtons {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .topBarButtons {
+    display: none;
+  }
+}
+.topBarButtons .languagePopUp {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(236, 77, 47, 0) 0%, rgba(236, 77, 47, 0.17) 100%);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 2px solid #ec4d2f;
+  border-radius: 28px;
+  width: 219px;
+  height: 142px;
+  text-align: end;
+  position: absolute;
+  top: 125px;
+  left: 62%;
+}
+.topBarButtons .languagePopUp p:hover {
+  color: #ec4d2f;
+  cursor: pointer;
+}
+.topBarButtons .languagePopUp p:first-child {
+  border-bottom: 1px solid #ec4d2f;
+  padding-bottom: 20px;
+}
+
+.burgerIconDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30px;
+  height: 30px;
+}
+@media (min-width: 767px) {
+  .burgerIconDiv {
+    display: none;
+  }
+}
+.burgerIconDiv .burgerIcon {
+  user-select: none;
+}
+@media (min-width: 767px) {
+  .burgerIconDiv .burgerIcon {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.burgerMenu {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #1d1b2b;
+  position: fixed;
+  z-index: 99;
+  overflow-y: hidden;
+  height: 100vh;
+}
+.burgerMenu ul {
+  margin-top: 50px;
+  padding-left: 20px;
+  list-style: none;
+}
+.burgerMenu ul li {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  max-width: 182px;
+  border-bottom: 1px solid #ec4d2f;
+}
+.burgerMenu ul li:hover {
+  transition: all 0.5s ease;
+  max-width: 150px;
+}
+
+.redLightButtons {
+  height: 55px;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(236, 77, 47, 0) 0%, rgba(236, 77, 47, 0.17) 100%);
+  color: white;
+  border: 2px solid #ec4d2f;
+  border-radius: 15px;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.redLightButtons:hover {
+  background: #ec4d2f;
+}
+.redLightButtons:active {
+  background: #b83922;
+}
+
+.swipe {
+  user-select: none;
+  transition: all 0.5s ease;
+  border: none;
+  background-color: #b83922;
+  width: 90px;
+  height: 50px;
+}
+.swipe:hover {
+  background-color: #ec4d2f;
+}
+.swipe:active {
+  background-color: #ab3520;
+}
+
+.next {
+  margin-left: 20px;
+  border-radius: 0px 100px 100px 0px;
+}
+
+.prev {
+  border-radius: 100px 0px 0px 100px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
